@@ -6,8 +6,9 @@ Pod::Spec.new do |spec|
   spec.license      = { :type => '' }
   spec.homepage     = 'https://github.com/wavesplatform/WavesWallet-iOS/'
   spec.authors      = { '' => '' }
-  spec.summary      = 'blake2'
-  spec.source       = { :git => 'git@github.com:wavesplatform/Blake2.git' }
+  spec.summary      = 'blake2'  
+  spec.requires_arc = true
+  spec.source       = { :git => 'https://github.com/wavesplatform/Blake2.git' }
   spec.source_files = 'Source/*.{h,c}'
   spec.public_header_files = 'Source/blake2.h', 'Source/crypto_generichash_blake2b.h', 'Source/export.h'
 end
